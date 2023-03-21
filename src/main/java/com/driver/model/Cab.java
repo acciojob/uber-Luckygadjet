@@ -24,7 +24,7 @@ public class Cab {
     public Cab(int id, int perKmRate, boolean available, Driver driver) {
         this.id = id;
         this.perKmRate = perKmRate;
-        this.available = true;
+        this.available = available;
         this.driver = driver;
     }
 
