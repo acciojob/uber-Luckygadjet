@@ -67,7 +67,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 		if(driver == null)
 		{
-			throw new Exception("No cab available!");
+			throw new Exception("No value present");
 		}
 
 		// If driver is Available
