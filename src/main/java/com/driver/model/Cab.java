@@ -10,7 +10,7 @@ public class Cab {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private int perkmRate;
+    private int perKmRate;
 
     private boolean available;
 
@@ -21,9 +21,9 @@ public class Cab {
     public Cab(){}
 
 
-    public Cab(int id, int perkmRate, boolean available, Driver driver) {
+    public Cab(int id, int perKmRate, boolean available, Driver driver) {
         this.id = id;
-        this.perkmRate = perkmRate;
+        this.perKmRate = perKmRate;
         this.available = true;
         this.driver = driver;
     }
@@ -36,15 +36,15 @@ public class Cab {
         this.id = id;
     }
 
-    public int getPerkmRate() {
-        return perkmRate;
+    public int getPerKmRate() {
+        return perKmRate;
     }
 
-    public void setPerkmRate(int perkmRate) {
-        this.perkmRate = perkmRate;
+    public void setPerKmRate(int perkmRate) {
+        this.perKmRate = perkmRate;
     }
 
-    public boolean isAvailable() {
+    public boolean getAvailable() {
         return available;
     }
 

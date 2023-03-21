@@ -18,7 +18,7 @@ public class TripBooking {
 
 
     @Enumerated(EnumType.STRING)
-    private TripStatus tripStatus;
+    private TripStatus Status;
 
     private int bill;
 
@@ -34,12 +34,12 @@ public class TripBooking {
 
     public TripBooking(){}
 
-    public TripBooking(int tripBookingId, String fromLocation, String toLocation, int distanceInKm, TripStatus tripStatus, int bill) {
+    public TripBooking(int tripBookingId, String fromLocation, String toLocation, int distanceInKm, TripStatus Status, int bill) {
         this.tripBookingId = tripBookingId;
         this.fromLocation = fromLocation;
         this.toLocation = toLocation;
         this.distanceInKm = distanceInKm;
-        this.tripStatus = tripStatus;
+        this.Status = Status;
         this.bill = bill;
     }
 
@@ -75,12 +75,12 @@ public class TripBooking {
         this.distanceInKm = distanceInKm;
     }
 
-    public TripStatus getTripStatus() {
-        return tripStatus;
+    public TripStatus getStatus() {
+        return Status;
     }
 
-    public void setTripStatus(TripStatus tripStatus) {
-        this.tripStatus = tripStatus;
+    public void setStatus(TripStatus Status) {
+        this.Status = Status;
     }
 
     public int getBill() {

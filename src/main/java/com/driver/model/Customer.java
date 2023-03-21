@@ -49,7 +49,7 @@ public class Customer {
         return pasword;
     }
 
-    public void setPasword(String pasword) {
+    public void setPassword(String pasword) {
         this.pasword = pasword;
     }
 
